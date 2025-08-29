@@ -22,6 +22,41 @@
 </head>
 
 <body class="mx-w-[1920px] font-hind">
+    <header>
+        <!-- nav section -->
+        <nav class="px-4 flex-col items-center lg:px-[60px] py-[25px] flex justify-between lg:flex-row">
+            <!-- nav left section -->
+            <div class="logo flex items-center gap-[10px]">
+                <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
+                <h1 class="text-[#006747] font-extrabold text-2xl">Emergency <br>Service</h1>
+            </div>
+
+            <!-- nav right section -->
+            <div class="flex justify-center items-center gap-[20px] ">
+                <!-- heart -->
+                <div
+                    class="bg-[#41ff6b1a] min-h-[52px] flex justify-center items-center gap-[10px] px-[35px] rounded-[50px]">
+                    <p id="heartValue" class="font-inter text-[16px] font-bold">0</p>
+                    <img class="w-[20px] h-[22px]" src="assets/heart.png" alt="">
+                </div>
+
+                <!-- coin -->
+                <div
+                    class="heart bg-[#41ff6b1a] min-h-[52px] flex justify-center items-center gap-[10px] px-[35px] rounded-[50px]">
+                    <p id="coinBalance" class="font-inter text-[16px] font-bold">100</p>
+                    <img class="w-[20px] h-[22px]" src="assets/coin.png" alt="">
+                </div>
+
+                <!-- copy -->
+                <div>
+                    <button
+                        class="font-inter w-[127px] h-[52px] my-[10px] cursor-pointer text-[16px] font-semibold text-white bg-[#00A63E] rounded-[50px]"><span
+                            id="copyCount">0</span>
+                        Copy</button>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- external js -->
     <script src="script.js"></script>
 </body>
